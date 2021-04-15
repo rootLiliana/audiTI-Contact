@@ -1,0 +1,63 @@
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!--Inicia el codigo html-->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--Referencias para hoja de estilo  -->
+<script src="https://kit.fontawesome.com/a139130498.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Contacto-Estevez</title>
+  </head>
+  <body>
+    <div class="container">
+    <!--Inicio de formulario -->
+    <h1 class="brand"><span>Contacto</span> Estevez Fuentes Rocio Liliana</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Porfavor, deja tu mensaje</h3>
+        <ul>
+          <li><i class="fas fa-school"></i> TESCo</li>
+          <li><i class="fas fa-user-astronaut"></i>  Rocio Liliana Estévez Fuentes.</li>
+          <li><i class="fas fa-space-shuttle"></i> Auditoria en Tecnologías de la Información.</li>
+          <li><i class="fa fa-user"></i> Profesor: Ing. Daniel Dominguez Cisneros.</li>
+          <li><i class="fas fa-globe-americas"></i> <a href="https://audti-4c98d.web.app/">Auditoria TI-Inicio</a></li>
+          <li><i class="fas fa-users"></i> Grupo: 10811.</li>
+        
+        </ul>
+      </div>  
+      <form class="contact-form">
+      <label for="">Nombre</label><br />
+      <input class="name" type="text" placeholder="name" /><br />
+      <label for="">Email</label><br />
+      <input class="email" type="email" placeholder="email" /><br />
+      <label for="">Mensaje</label><br />
+       <!--Tamaño del textarea del mensaje-->
+      <textarea
+        class="message"
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="message"
+      ></textarea
+      ><br />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+     <!--Referencias de firebase y archivo javascrip-->
+      <!--En la URL de gstatic al final se añade un app antes del js. muchas veces este impide la conexion-->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
